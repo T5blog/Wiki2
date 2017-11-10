@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Wiki2 - Grupo T5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/wiki.ico"/>
+    
+
+<style type="text/css">
+        body{
+          background: url("img/fondo.jpg") no-repeat center center fixed;
+         background-size: cover;
+        }
+        .subir{
+          position: fixed;
+          bottom: 7%;
+          right: 5%;
+        }
+        .subir:hover{animation: anim 1s;
+        }
+        iframe{
+          max-width: 570px;
+        }
+
+
+        @keyframes anim {0% {background-color: #1778b1;}
+                        50%{background-color: white;color: black;}
+                        100%{background-color: #1778b1;}
+        }
+
+
+        @media (max-width: 490px) { 
+
+        .carousel, .nav{
+          width: 100%;
+        }
+
+        .container{
+          font-size: 11px;
+          width: 100%;
+        }
+        .badge{
+          width: 43%;
+          font-size: 11px;
+          padding: 6px;
+        }
+
+        iframe{ width:100%; height: 150px}
+    
+        .nav-link{
+          font-size: 13px;
+          padding-left:2px;
+        }
+        .text-primary{
+          font-size: 10px;
+        }
+
+        h3.font-weight-bold{
+          font-size: 14px;
+        }
+        .list-group-item{
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+        .btn{
+          font-size: 12px;
+          padding: 6px;
+          margin-top: 8px;
+          margin-bottom: -8px;
+        }
+        
+      }
+
+
+      @media (min-width: 490px) and (max-width: 899px) {  
+        
+        .carousel, .nav{
+          width: 70%;
+        }
+        .container{
+          font-size: 14px;
+        }
+        
+        h3{
+          font-size: 17px;
+        }
+        .badge{
+          font-size: 18px;
+          padding: 6px;
+          margin-bottom: 
+        }
+
+        iframe{ width:70%; height: 220px}
+      }
+
+      @media (min-width: 900px) { 
+        
+        .carousel, .nav{
+          width: 50%;
+        }
+
+        .container{
+          width: 60%;
+        }
+        .list-group-item{
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+
+        h3{
+          font-size: 22px;
+          margin-top: 10px;
+          margin-bottom: 25px;
+        }
+        li>div>img{
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+
+      }
+
+
+      
+
+    </style>
+
+  </head>
+  <body>
+<br>
+   <!-- TITULUA -->
+<header>
+    <h1 class="text-uppercase mt-5 text-center"><span class="badge text-center mt-4 bg-light w-50 mx-auto p-2 titulua border border-dark">OwnCloud</span></h1>
+</header>
+
+  <!-- NABIGATZAILEA !-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <i class="navbar-brand text-uppercase" href="#">Reto Wiki2</i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wordpress.html">Wordpress</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="owncloud.html">OwnCloud</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prestashop.html">Prestashop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Páginas oficiales
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://es.wordpress.org/">WordPress</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="https://owncloud.org/">Owncloud</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="https://www.prestashop.com/es/">Prestashop</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+<!-- CAROUSEL !-->
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide bg-light mx-auto mt-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/owncloud3.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/owncloud4.png" alt="Second slide">
+          </div>      
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+   <ul class="nav justify-content-center bg-dark mx-auto">
+      <li class="nav-item">
+        <a class="nav-link text-light active" href="#Quees">¿Qué es?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#Instalacion">Instalación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#Usobasico">Uso básico</a>
+      </li>
+  </ul>
+
+
+<a name="Quees">
+  <h1 class="text-uppercase mt-4 text-center"><span class="badge badge-primary border border-dark">¿Qué es?</span></h1>
+  <div class="container rounded mx-auto mt-4 py-4 bg-light border border-dark ">   
+     <p> 
+        OwnCloud es una aplicación de software libre del <b>Servicio de alojamiento de archivos</b>  que permite <b>el almacenamiento en línea y aplicaciones en línea (cloud computing)</b>.OwnCloud puede ser instalado dentro de un servidor que disponga de una versión reciente de PHP (mayor o igual a 5.6) y soporte de SQLite (base de datos por defecto), MySQL o PostgreSQL.
+     </p>
+
+     <div class="container text-center my-2 w-100">
+        <iframe width="75%" height="315" src="https://www.youtube.com/embed/PlTF2C6LS-A" frameborder="0" allowfullscreen></iframe>
+     </div>
+      
+  </div>
+
+
+
+
+
+<a name="Medios">
+  <h1 class="text-uppercase mt-5 text-center"><span class="badge badge-primary border border-dark">Instalación</span></h1>
+  <div class="container mt-4 py-4">   
+        
+        <ul class="list-group">
+           <li class="list-group-item border border-dark">
+              <h3 class="font-weight-bold text-center">CREAMOS UNA BASE DE DATOS</h3>
+              Ejecutamos el siguiente comentario (nos pedirá la contraseña root del MySQL):
+              <p class="text-primary text-center font-weight-bold mt-2">mysql -uroot -p</p>
+              La creamos:
+              <div class="text-primary ml-1 font-weight-bold mt-2">
+                CREATE DATABASE owncloud;<br>
+
+                  CREATE USER admin@localhost IDENTIFIED BY 'contraseña';<br>
+
+                  GRANT ALL PRIVILEGES ON owncloud.* TO           admin@localhost;<br>
+
+                  FLUSH PRIVILEGES;<br>
+
+                  exit
+              </div>
+          </li>
+          <li class="list-group-item border border-dark">
+            <h3 class="font-weight-bold text-center">DESCARGAMOS OWNCLOUD</h3>
+            Vamos a descargar los archivos de owncloud de su sitio web.
+            <p class="text-primary text-center font-weight-bold mt-2">cd ~<br>
+              wget http://download.owncloud.org/community/owncloud-latest.tar.bz2
+          </p>
+          
+            Con esto habremos descargado el archivo comprimido con el contenido de owncloud en nuestra carpeta raíz. Podemos extraer los archivos para reconstruir el directorio de owncloud escribiendo :
+            <p class="text-primary text-center font-weight-bold mt-2">tar tar -xjf owncloud-latest.tar.bz2</p>
+            <p class="text-primary text-center font-weight-bold mt-2">tar sudo mv owncloud /var/www/html/</p>
+            <div class="alert alert-info" role="alert">
+                Esto creará un directorio llamado owncloud en nuestra carpeta raíz.
+            </div>
+            Despues hacemos un update.
+            <p class="text-primary text-center font-weight-bold mt-2">sudo apt-get update</p>
+          
+            Tras ello, deberemos de obtener los dos paquetes necesarios :
+            <p class="text-primary text-center font-weight-bold mt-2">apt-get install php libapache2-mod-php php-mcrypt php-mysql</p>
+
+            <div class="alert alert-info" role="alert">
+                Despues deberemos cambiar el nombre del DirectoryIndex para que coja el index.php
+       
+            </div>
+                      <p class="text-primary text-center font-weight-bold mt-2">nano /etc/apache2/mods-enabled/dir.conf
+            </p>
+            <p class="text-primary text-center font-weight-bold mt-2">
+            IfModule mod_dir.c
+              DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+          /IfModule>
+                <br>
+
+          IfModule mod_dir.c>
+                  DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+            /IfModule>
+                      </p>
+          <div class="alert alert-info" role="alert">
+                          Despues Instalamos módulos de PHP. Hemos instalado los siguientes:
+                                  
+       
+            </div>
+            <p class="text-primary text-center font-weight-bold mt-2"> <img class="w-75 mt-1 mx-auto" src="img/descargaOC.png">
+            </p>
+
+          </li>
+
+ 
+
+    
+         
+       
+      
+          <li class="list-group-item border border-dark">
+            <h3 class="font-weight-bold text-center">CONTINUAMOS CON LA INSTALACIÓN EN UN NAVEGADOR:</h3>
+            Ahora que tienes los archivos en su sitio y tu software está configurado, puedes completar la instalación a través el interfaz web.<br>
+            En tu navegador web, dirígete a la URL de tu servidor web:
+            <p class="text-primary text-center font-weight-bold mt-2">http://nombre_DNS_o_IP
+            </p>
+            
+            Aparecera esto y lo rellenaremos con el nombre de usuario y la contraseña:<br>
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/owncloud3.png" alt="First slide">
+            </div>
+            Al logearnos aparecería la interfaz de Owncloud:
+            <div class="carousel-item active">
+              <img class="d-block w-100 border border-secundary" src="img/owncloud4.png" alt="First slide">
+            </div>
+            <div class="alert alert-success mt-5" role="alert">
+              A partir de este punto podríamos entrar y usar libremente nuestro OwnCloud.
+            </div>
+          </li>
+        </ul>
+    </div>
+    <a name="Usobasico">
+  <h1 class="text-uppercase mt-4 text-center"><span class="badge badge-primary border border-dark text-light">Uso básico</span></h1>
+  <div class="container mt-4 py-3">    
+      <ul class="list-group">
+          <li class="list-group-item border border-dark">
+        <b>Crear carpeta</b> o <b>subir archivos</b>:
+        <br>
+        <div class="container text-center w-100 my-2">
+            <img src="img/usarO1.png" class="w-100">
+        </div>
+          </li>
+          <li class="list-group-item border border-dark">
+            <b>Compartir</b> carpetas:
+            <div class="container text-center w-100 my-2">
+              <img src="img/usarO2.png" class="w-100">
+            </div>
+          </li>
+          
+      </ul>
+  </div>
+
+  <div class="text-center ">
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top p-1 mb-5 subir">
+      <span class="glyphicon glyphicon-search mx-auto fixed" aria-hidden="true">Subir</span>
+    </a>
+  </div>
+   
+<div class="fluid-container mt-5 pt-3 text-center text-light bg-dark " style="height: 75px;">
+  &copy Este proyecto pertenece al grupo T5 de 2dw3
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
